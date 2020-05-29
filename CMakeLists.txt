@@ -16,7 +16,4 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -O2")
 
 add_executable(${PROJECT_NAME} "source/Main.cpp")
 
-include_directories("modules/SimpleMath/source")
-
-add_subdirectory(modules/SimpleMath)
-target_link_libraries(${PROJECT_NAME} SimpleMath)
+include_directories("modules/SimpleMath/include")
